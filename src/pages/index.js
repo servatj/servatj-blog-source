@@ -1,41 +1,6 @@
 import React from "react"
-import Header from "../components/Header"
-import { graphql, Link } from "gatsby"
-
-const Layout = ({ data }) => {
-  const { edges } = data.allMarkdownRemark
-  return (
-    <div>
-      <Header />
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        fontFamily: 'avenir'
-      }}>
-        {edges.map(edge => {
-          const {frontmatter} = edge.node
-          return (
-            <div
-              key={frontmatter.path}
-              style={{marginBottom: '1rem'}}
-            >
-              <Link
-                style={{
-                  boxShadow: 'none',
-                  textDecoration: 'none',
-                  color: 'var(--textTitle)',
-                }}
-                to={frontmatter.path}>
-                {frontmatter.title}
-              </Link>
-            </div>
-          )
-        })}
-      </div>
-    </div>
-  )
-}
+import Layout from "../components/Layout"
+import { graphql } from "gatsby"
 
 export const query = graphql`
   query HomepageQuery {
@@ -53,8 +18,6 @@ export const query = graphql`
   }
 `
 
-const init = ({ data }) => {
+export default ({ data }) => {
   return <Layout data={data} />
 }
-
-export default init
