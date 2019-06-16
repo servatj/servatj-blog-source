@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "column",
+      "fontFamily": "avenir",
+    }
+  }
+>
+  <h2
+    style={
+      Object {
+        "marginBottom": 0,
+      }
+    }
+  >
+    Default Starter
+  </h2>
+  <p
+    style={
+      Object {
+        "marginTop": 0,
+        "opacity": 0.5,
+      }
+    }
+  />
+</div>
+`;
