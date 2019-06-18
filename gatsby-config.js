@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'servatj blog',
+    title: "servatj blog",
     description: "This is Josep Servat's personal blog"
   },
   plugins: [
@@ -19,4 +19,4 @@ module.exports = {
       }
     }
   ]
-}
+};

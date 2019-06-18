@@ -1,13 +1,13 @@
-import React from "react"
-import Layout from "../components/Layout"
-import { graphql } from "gatsby"
+import React from "react";
+import Layout from "../components/Layout";
+import { graphql } from "gatsby";
 
 export const query = graphql`
   query HomepageQuery {
     allMarkdownRemark {
       edges {
-        node{
-          frontmatter{
+        node {
+          frontmatter {
             title
             path
             date
@@ -16,8 +16,8 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 export default ({ data }) => {
-  return <Layout data={data} />
-}
+  return <Layout data={data} />;
+};

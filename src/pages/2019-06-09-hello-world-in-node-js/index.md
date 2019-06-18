@@ -3,9 +3,10 @@ path: "/hello-world-in-node-js"
 date: "2019-06-09"
 title: "Hello World With Node js, the quick & dirty guide"
 author: "Josep Servat"
-tags: ['node', 'javascript', 'beginner']
+tags: ["node", "javascript", "beginner"]
 excerpt: "A preview of my first post"
 ---
+
 **Introduction**
 
 This is a post that I'm using as my first post in my new blog and it's about node and it's for beginners and hopefully it will help you start developing apps with javascript.
@@ -17,14 +18,13 @@ I'll post some more advanced details of Node internals in the future.
 
 **Install**
 
-Before you install Node JS I will first recommend you to use Linux or Mac OS or Docker. Use a virtual machine if you need it but i can't recommend node js in Windows since a lot of the stuff you will find on google will be based on the nix* based OS.
+Before you install Node JS I will first recommend you to use Linux or Mac OS or Docker. Use a virtual machine if you need it but i can't recommend node js in Windows since a lot of the stuff you will find on google will be based on the nix\* based OS.
 
 Once we have decided the os we want to use we can go to the official website an download the last version of node but again it's recommended to install by using a tool called nvm. Nvm is a tool that will help us install nodejs an move between differente versions as needed.
 
 Here you have a complete guide to install nvm in the OS of your choice https://gist.github.com/d2s/372b5943bce17b964a79
 
 In this post I'm going to install and run everything in a Macbook, but everything is quite similar for the rest of the OS.
-
 
 ```bash
 $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
@@ -92,7 +92,7 @@ $ touch helloWorld
 and you can edit this file with your prefered editor and type
 
 ```javascript
-console.log('Hello World!')
+console.log("Hello World!");
 ```
 
 and in orther to run our master piece
