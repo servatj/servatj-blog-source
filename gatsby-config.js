@@ -6,17 +6,18 @@
 
 module.exports = {
   siteMetadata: {
-    title: "servatj blog",
-    description: "This is Josep Servat's personal blog"
+    title: 'servatj blog',
+    description: "This is Josep Servat's personal blog",
   },
   plugins: [
     `gatsby-transformer-remark`,
+    `gatsby-plugin-typography`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages`
-      }
-    }
-  ]
-};
+        path: `${__dirname}/src/pages`,
+      },
+    },
+  ],
+}
