@@ -4,6 +4,8 @@ import Header from '../components/Header'
 import {Link} from 'gatsby'
 import {object} from 'prop-types'
 
+import '../utils/global.css'
+
 const Layout = ({data}) => {
   const {edges} = data.allMarkdownRemark
   return (
