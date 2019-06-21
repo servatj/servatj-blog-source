@@ -7,7 +7,6 @@ exports[`Header renders correctly 1`] = `
       "alignItems": "center",
       "display": "flex",
       "flexDirection": "column",
-      "fontFamily": "avenir",
     }
   }
 >
@@ -23,6 +22,7 @@ exports[`Header renders correctly 1`] = `
   <p
     style={
       Object {
+        "color": "#c74",
         "marginTop": 0,
         "opacity": 0.5,
       }
