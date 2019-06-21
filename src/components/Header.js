@@ -1,31 +1,32 @@
-import React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import React from 'react'
+import {StaticQuery, graphql} from 'gatsby'
 
-const TitleAndDescription = ({ data }) => {
-  const title = data.site.siteMetadata.title;
-  const description = data.site.siteMetadata.description;
+// eslint-disable-next-line react/prop-types
+const TitleAndDescription = ({data}) => {
+  const title = data.site.siteMetadata.title
+  const description = data.site.siteMetadata.description
 
   return (
     <div
       style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        fontFamily: "avenir"
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
       }}
     >
-      <h2 style={{ marginBottom: 0 }}>{title}</h2>
+      <h2 style={{marginBottom: 0}}>{title}</h2>
       <p
         style={{
           marginTop: 0,
-          opacity: 0.5
+          opacity: 0.5,
+          color: '#c74',
         }}
       >
         {description}
       </p>
     </div>
-  );
-};
+  )
+}
 
 const Header = () => {
   return (
@@ -42,7 +43,7 @@ const Header = () => {
       `}
       render={data => <TitleAndDescription data={data} />}
     />
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

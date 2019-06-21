@@ -6,8 +6,8 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'servatj blog',
-    description: "This is Josep Servat's personal blog",
+    title: "@servatj's blog",
+    description: 'Keep curious!',
   },
   plugins: [
     `gatsby-transformer-remark`,

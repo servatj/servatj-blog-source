@@ -16,7 +16,6 @@ const Layout = ({data}) => {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          fontFamily: 'avenir',
         }}
       >
         {edges.map(edge => {
@@ -27,7 +26,7 @@ const Layout = ({data}) => {
                 style={{
                   boxShadow: 'none',
                   textDecoration: 'none',
-                  color: 'var(--textTitle)',
+                  color: '#fff',
                 }}
                 to={frontmatter.path}
               >

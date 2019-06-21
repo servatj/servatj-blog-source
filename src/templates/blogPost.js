@@ -7,7 +7,7 @@ const Template = ({data}) => {
   const title = markdownRemark.frontmatter.title
   const html = markdownRemark.html
   return (
-    <div>
+    <div className="article">
       <h1>{title}</h1>
       <div className="blogpost" dangerouslySetInnerHTML={{__html: html}} />
     </div>
