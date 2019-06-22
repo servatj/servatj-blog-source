@@ -7,14 +7,20 @@
 module.exports = {
   siteMetadata: {
     title: "@servatj's blog",
+    author: 'Josep Servat',
     description: 'Keep curious!',
   },
   plugins: [
-    `gatsby-transformer-remark`,
     {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'src/utils/typography',
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-prismjs`],
       },
     },
     {
