@@ -19,19 +19,28 @@ const Layout = ({data}) => {
         }}
       >
         {edges.map(edge => {
-          const {frontmatter} = edge.node
+          const {frontmatter, timeToRead} = edge.node
           return (
             <div key={frontmatter.path} style={{marginBottom: '1rem'}}>
               <Link
                 style={{
                   boxShadow: 'none',
                   textDecoration: 'none',
-                  color: '#fff',
+                  color: '#ff6b6b',
                 }}
                 to={frontmatter.path}
               >
                 {frontmatter.title}
               </Link>
+              <br />
+              <small style={{color: '#fff'}}>
+                {frontmatter.date}{' '}
+                <small style={{color: '#fff'}}>
+                  Time To Read *:* {timeToRead}
+                </small>
+              </small>
+              <br />
+              <p style={{color: '#fff'}}>{frontmatter.excerpt}</p>
             </div>
           )
         })}
@@ -48,8 +57,10 @@ export const query = graphql`
           frontmatter {
             title
             path
-            date
+            date(formatString: "MMMM DD, YYYY")
+            excerpt
           }
+          timeToRead
         }
       }
     }

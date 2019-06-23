@@ -19,7 +19,7 @@ const TitleAndDescription = ({data}) => {
         style={{
           marginTop: 0,
           opacity: 0.5,
-          color: '#c74',
+          color: '#ff6b6b',
         }}
       >
         {description}
