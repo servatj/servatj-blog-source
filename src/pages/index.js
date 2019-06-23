@@ -1,6 +1,7 @@
 /* eslint-disable import/first */
 import React from 'react'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import {graphql, Link} from 'gatsby'
 
 import '../utils/global.css'
@@ -44,6 +45,7 @@ const Layout = ({data}) => {
             </div>
           )
         })}
+        <Footer />
       </div>
     </div>
   )
