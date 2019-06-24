@@ -8,6 +8,7 @@ const Footer = () => {
       style={{
         marginTop: rhythm(2.5),
         paddingTop: rhythm(1),
+        color: '#fff',
       }}
     >
       <a
@@ -27,7 +28,7 @@ const Footer = () => {
       </a>{' '}
       &bull;{' '}
       <a
-        href="https://stackoverflow.com/users/458193/dan-abramov"
+        href="https://www.linkedin.com/in/josep-servat-lorca-384ba757/"
         target="_blank"
         rel="noopener noreferrer"
       >
