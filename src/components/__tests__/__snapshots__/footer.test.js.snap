@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<footer
+  style={
+    Object {
+      "marginTop": "4.375rem",
+      "paddingTop": "1.75rem",
+    }
+  }
+>
+  <a
+    href="https://mobile.twitter.com/servatj"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    twitter
+  </a>
+   
+  •
+   
+  <a
+    href="https://github.com/servatj"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    github
+  </a>
+   
+  •
+   
+  <a
+    href="https://stackoverflow.com/users/458193/dan-abramov"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Linkedin
+  </a>
+</footer>
+`;

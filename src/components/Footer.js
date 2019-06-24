@@ -10,11 +10,6 @@ const Footer = () => {
         paddingTop: rhythm(1),
       }}
     >
-      <div style={{float: 'right'}}>
-        <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
-          rss
-        </a>
-      </div>
       <a
         href="https://mobile.twitter.com/servatj"
         target="_blank"

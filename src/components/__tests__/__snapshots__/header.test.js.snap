@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "justifyContent": "center",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "marginBottom": -5,
+        "marginRight": 10,
+      }
+    }
+  >
+    <img
+      alt="Josep Servat"
+      src="../assets/josepServat.jpg"
+      style={
+        Object {
+          "borderRadius": "50%",
+          "height": "3.5rem",
+          "marginBottom": 0,
+          "width": "3.5rem",
+        }
+      }
+    />
+  </div>
+  <div>
+    <h1
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    >
+      Default Starter
+    </h1>
+    <p
+      style={
+        Object {
+          "color": "#ff6b6b",
+          "marginTop": 0,
+          "opacity": 0.5,
+        }
+      }
+    />
+  </div>
+</div>
+`;
