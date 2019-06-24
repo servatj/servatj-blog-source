@@ -1,5 +1,7 @@
 import React from 'react'
 import {StaticQuery, graphql} from 'gatsby'
+import {rhythm} from '../utils/typography'
+import profilePic from '../assets/josepServat.jpg'
 
 // eslint-disable-next-line react/prop-types
 const TitleAndDescription = ({data}) => {
@@ -10,20 +12,36 @@ const TitleAndDescription = ({data}) => {
     <div
       style={{
         display: 'flex',
-        flexDirection: 'column',
+        // flexDirection: 'column',
+        justifyContent: 'center',
         alignItems: 'center',
       }}
     >
-      <h2 style={{marginBottom: 0}}>{title}</h2>
-      <p
-        style={{
-          marginTop: 0,
-          opacity: 0.5,
-          color: '#ff6b6b',
-        }}
-      >
-        {description}
-      </p>
+      <div style={{marginBottom: -5, marginRight: 10}}>
+        <img
+          src={profilePic}
+          alt={`Josep Servat`}
+          style={{
+            marginBottom: 0,
+            width: rhythm(2),
+            height: rhythm(2),
+            borderRadius: '50%',
+          }}
+        />
+      </div>
+
+      <div>
+        <h1 style={{marginBottom: 0}}>{title}</h1>
+        <p
+          style={{
+            marginTop: 0,
+            opacity: 0.5,
+            color: '#ff6b6b',
+          }}
+        >
+          {description}
+        </p>
+      </div>
     </div>
   )
 }
