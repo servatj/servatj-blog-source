@@ -1,9 +1,10 @@
 import React from 'react'
 import {StaticQuery, graphql} from 'gatsby'
 import {rhythm} from '../utils/typography'
+import profilePic from '../assets/josepServat.jpg'
 
 // eslint-disable-next-line react/prop-types
-const TitleAndDescription = ({data, profilePic}) => {
+const TitleAndDescription = ({data}) => {
   const title = data.site.siteMetadata.title
   const description = data.site.siteMetadata.description
 
