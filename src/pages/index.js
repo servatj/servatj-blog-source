@@ -3,6 +3,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import {graphql, Link} from 'gatsby'
+import {formatPostDate, formatReadingTime} from '../utils/helpers'
 
 import '../utils/global.css'
 
@@ -35,10 +36,7 @@ const Layout = ({data}) => {
               </Link>
               <br />
               <small style={{color: '#fff'}}>
-                {frontmatter.date}{' '}
-                <small style={{color: '#fff'}}>
-                  Time To Read *:* {timeToRead}
-                </small>
+                {frontmatter.date} {` • ${formatReadingTime(timeToRead)}`}
               </small>
               <br />
               <p style={{color: '#fff'}}>{frontmatter.excerpt}</p>
