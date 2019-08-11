@@ -9,18 +9,18 @@ excerpt: "A preview of my first post"
 
 **Introduction**
 
-This is a post that I'm using as my first post in my new blog and it's about node and it's for beginners and hopefully it will help you start developing apps with javascript.
+This is a post that I'm using as my first post in my new blog and it's about node JS and it's for beginners and hopefully, it will help you start developing apps with javascript.
 
-In a nutshell NodeJS is a runtime that allows us to run javascript outside the browser or
+In a nutshell, NodeJS is a runtime that allows us to run javascript outside the browser or
 in other words to run javascript in our operating system as any other traditional languages like Java, PHP, C and so on.
 
 I'll post some more advanced details of Node internals in the future.
 
 **Install**
 
-Before you install Node JS I will first recommend you to use Linux or Mac OS or Docker. Use a virtual machine if you need it but i can't recommend node js in Windows since a lot of the stuff you will find on google will be based on the nix\* based OS.
+Before you install Node JS I will first recommend you to use Linux or Mac OS or Docker. Use a virtual machine if you need to but I can't recommend node js in Windows since a lot of the stuff you will find on google will be based on the nix\* based OS.
 
-Once we have decided the os we want to use we can go to the official website an download the last version of node but again it's recommended to install by using a tool called nvm. Nvm is a tool that will help us install nodejs an move between differente versions as needed.
+Once we have decided the OS we want to use, we can go to the official website and download the last version of Node JS but instead of this, it's suggested you install Node js by using a tool called NVM. Nvm is a tool that will help you install Node js and choose differents versions of Node js in different projects in your local.
 
 Here you have a complete guide to install nvm in the OS of your choice https://gist.github.com/d2s/372b5943bce17b964a79
 
@@ -36,9 +36,9 @@ if no errors appear you will see that it suggest you to run this command
 $ source ~/.bashrc
 ```
 
-after running this command you will be able to run nvm anywhere from the shell. An alternative to this is to simply restart the shell and the command will be also available.
+After running source command you will be able to run nvm anywhere from the terminal. An alternative to this is to simply restart the terminal and the command will be also available.
 
-Then at this point we can install node js in the version we prefer in order to do that we can list the available node versions
+Then at this point we can install Node js in the version we prefer. In order to do that we can list all the available versions first.
 
 ```bash
 $ nvm ls
@@ -66,7 +66,7 @@ As you can see at the moment of writing this the latest node version is 11.9 but
 $ nvm install 11.9
 ```
 
-and then we can run node js for the very first time in order to get the current installed version.
+Now we can run Node js for the very first time in order to get the current installed version.
 
 ```bash
 $ node --version
@@ -81,7 +81,7 @@ Ok can you feel it ? We 're ready to go and create our first javascript file and
 $ mkdir hello-world
 ```
 
-by the way notice that the folder names is a lower case separated with dashes, this is the accepted naming convention by the majority of the node js community.
+by the way, notice that the folder names are a lower case separated with dashes, this is the accepted naming convention by the majority of the node js community.
 
 Inside this folder we're going to create the js file
 
@@ -89,19 +89,19 @@ Inside this folder we're going to create the js file
 $ touch helloWorld
 ```
 
-and you can edit this file with your prefered editor and type
+and you can edit this file with your prefered editor and write
 
 ```javascript
 console.log("Hello World!");
 ```
 
-and in orther to run our master piece
+and in order to run our master piece
 
 ```bash
 $ node helloWorld.js
 Hello World!
 ```
 
-Ok so that's it for the moment. Maybe you're wondering, is this is the common way to create node js project properly? Not at all I would say :) The common way to create a new project in node js is by using another interesting cli tool called NPM, but this is for another quick and dirty node js guide.
+Ok, so that's it for the moment. Maybe you're wondering, is this is the common way to create node js project properly? Not at all, I would say :) The common way to create a new project in node js is by using another interesting cli tool called NPM, but this is for another quick and dirty node js guide.
 
-you can ping me in twitter @servatj any question you have, if you like it the post and you're waiting for more and so on...
+you can ping me in twitter @servatj any question you have if you like it then post and you're waiting for more and so on...
