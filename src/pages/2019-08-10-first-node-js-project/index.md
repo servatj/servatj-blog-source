@@ -172,7 +172,7 @@ Now, create a new file in the root folder of your project called main.js
 we can start by putting a console.log there
 
 ```javascript
-  console.log('Hello I am a bot 👋')
+  console.log('Hello I am a bot 🤖 👋')
 ```
 
 (you can add an emoji in mac with cmd+control+space )
@@ -195,4 +195,92 @@ npm run + name of the script you want to run
 }
 ```
 
-By default we can see that
+By default we can see that npm tool has created one script for tests called test that it has a message by default indicating you that it's not properly set.
+
+if you run **npm run test**, you will see the error message
+
+```sh
+> bot@0.0.1 test /Users/user/node-bot
+> echo "Error: no test specified" && exit 1
+
+Error: no test specified
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! bot@0.0.1 test: `echo "Error: no test specified" && exit 1`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the bot@0.0.1 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+
+npm ERR! A complete log of this run can be found in:
+```
+
+Let's add a start script in package json, this will allow us to ***npm run start*** script.
+
+```JSON
+{
+  "name": "bot",
+  "version": "0.0.1",
+  "description": "This is my Awesome bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Servatj <josep.servat@guidesmiths.com>",
+  "license": "MIT"
+}
+```
+if we run the created script we can see our app run.
+
+```sh
+npm run start
+
+> bot@0.0.1 start /Users/servatj/node-bot
+> node main.js
+
+Hello I am a bot 👋
+
+```
+
+## Prompts in node js
+
+At this point we can change the main.js file and run it anytime with npm run start.
+
+So now it's time to play with more node js and more javascript.
+
+We want to add our bot the ability to prompt a question ask our name and respond accordingly. For that we 're going to use a third party package in npm registry that will help us to do it easily, [prompt-sync](https://www.npmjs.com/package/prompt-sync). "<small>There are more ways to prompt a message in node with the core libraries but we will needed to explain more advanced topics that wi will see in further posts.</small> "
+
+First thing we need to do is to install the package, we use npm like this:
+
+```
+  npm install prompt-sync --save
+```
+
+Then we can import this new package in our main.js file
+
+```javascript
+  prompt = require('prompt-sync')();
+
+  console.log('Hello I am a bot 👋 ')
+
+```
+now we're ready to use it after the first greeting
+
+```javascript
+const prompt = require('prompt-sync')();
+
+console.log('Hello I am a bot 👋 ')
+
+const name = prompt('What is your name? ');
+
+console.log('Nice to meet you ' + name + '!');
+```
+
+Ok many things happened here, we required our package and named as prompt
+then the app printed the initial greetings, then our bot prompted our name and stored the value in name variable and finally it prints our message wrapped in a standard greeting. Yayyy!
+
+At this point I think it's enough for this post you can try ro play with console log, running, prompting etc
+
+In the next post we will see what is sync word and his counterpart async, what is a callback and how our bot will get and fetch forecast data from internet.
