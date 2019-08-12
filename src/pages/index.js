@@ -20,28 +20,37 @@ const Layout = ({data}) => {
           alignItems: 'center',
         }}
       >
-        {edges.map(edge => {
-          const {frontmatter, timeToRead} = edge.node
-          return (
-            <div key={frontmatter.path} style={{marginBottom: '1rem'}}>
-              <Link
-                style={{
-                  boxShadow: 'none',
-                  textDecoration: 'none',
-                  color: '#ff6b6b',
-                }}
-                to={frontmatter.path}
-              >
-                <h3>{frontmatter.title}</h3>
-              </Link>
-              <small style={{color: '#fff'}}>
-                {frontmatter.date} {` • ${formatReadingTime(timeToRead)}`}
-              </small>
-              <br />
-              <p style={{color: '#fff'}}>{frontmatter.excerpt}</p>
-            </div>
-          )
-        })}
+        <div
+          id="list-wrapper"
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'left',
+          }}
+        >
+          {edges.map(edge => {
+            const {frontmatter, timeToRead} = edge.node
+            return (
+              <div key={frontmatter.path} style={{marginBottom: '1rem'}}>
+                <Link
+                  style={{
+                    boxShadow: 'none',
+                    textDecoration: 'none',
+                    color: '#ff6b6b',
+                  }}
+                  to={frontmatter.path}
+                >
+                  <h3>{frontmatter.title}</h3>
+                </Link>
+                <small style={{color: '#fff'}}>
+                  {frontmatter.date} {` • ${formatReadingTime(timeToRead)}`}
+                </small>
+                <br />
+                <p style={{color: '#fff'}}>{frontmatter.excerpt}</p>
+              </div>
+            )
+          })}
+        </div>
         <Footer />
       </div>
     </div>
