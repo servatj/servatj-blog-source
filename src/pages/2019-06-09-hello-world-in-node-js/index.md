@@ -1,11 +1,13 @@
 ---
 path: "/hello-world-in-node-js"
 date: "2019-06-09"
-title: "Hello World With Node js, the quick & dirty guide"
+title: "  Hello world with Node js, [Node JS part 1] "
 author: "Josep Servat"
 tags: ["node", "javascript", "beginner"]
-excerpt: "A preview of my first post"
+excerpt: "A quick introduction to node js"
 ---
+
+![Lint rule gif](./middlewares-en-nodejs.jpg)
 
 **Introduction**
 

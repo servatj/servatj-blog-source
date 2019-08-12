@@ -32,9 +32,8 @@ const Layout = ({data}) => {
                 }}
                 to={frontmatter.path}
               >
-                {frontmatter.title}
+                <h3>{frontmatter.title}</h3>
               </Link>
-              <br />
               <small style={{color: '#fff'}}>
                 {frontmatter.date} {` • ${formatReadingTime(timeToRead)}`}
               </small>
