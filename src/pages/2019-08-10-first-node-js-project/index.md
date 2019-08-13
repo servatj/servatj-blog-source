@@ -1,6 +1,6 @@
 ---
 path: "/first-node-js-project"
-date: "2019-10-11"
+date: "2019-08-11"
 title: "Create new Node js project,[Node JS part 2]"
 author: "Josep Servat"
 tags: ["node", "javascript", "beginner"]
@@ -285,8 +285,4 @@ At this point I think it's enough for this post you can try to play with console
 
 In the next post, we will see what is sync word and his counterpart async, what is a callback and how our bot will get and fetch forecast data from the internet.
 
-This is the second part of the series about learning node js in this blog. In the previous [post](/hello-world-in-node-js) we installed node js and ran our first script. In this post, the idea is to create a more advanced project.
-
-We're going to create a very rudimentary bot. The idea is to start with a bot that greets the user ask for his name. Then we can continue adding more features like the ability to tell us the time or the news.
-
-In our journey, the idea is to learn both some important concepts about javascript and node js but I recommend you to look and combine the content of this series with other javascript sources out there in a more formal way 😉 But the idea again is to help you get traction on node js.
+repo -- > https://github.com/servatj/node-bot
