@@ -34,6 +34,7 @@ const Footer = () => {
       >
         Linkedin
       </a>
+      <a href="https://discord.gg/vbE4MaJ">Discord</a>
     </footer>
   )
 }

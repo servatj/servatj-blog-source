@@ -157,7 +157,7 @@ add stages the files for committing them
 
 If you have set everything ok push command will push your changes to your repo. In my case, you can get the repo in https://github.com/servatj/node-bot.
 
-Let me know if you need help on this in my [discord](https://discord.gg/3hZfAn) channel.
+Let me know if you need help on this in my [discord](https://discord.gg/vbE4MaJ) channel.
 
 ## npm scripts
 
