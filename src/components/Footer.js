@@ -32,9 +32,9 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Linkedin
-      </a>
-      <a href="https://discord.gg/vbE4MaJ">Discord</a>
+        linkedin
+      </a>{' '}
+      &bull; <a href="https://discord.gg/vbE4MaJ">Discord</a>
     </footer>
   )
 }

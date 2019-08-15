@@ -4,6 +4,7 @@ exports[`Footer renders correctly 1`] = `
 <footer
   style={
     Object {
+      "color": "#fff",
       "marginTop": "4.375rem",
       "paddingTop": "1.75rem",
     }
@@ -30,11 +31,19 @@ exports[`Footer renders correctly 1`] = `
   •
    
   <a
-    href="https://stackoverflow.com/users/458193/dan-abramov"
+    href="https://www.linkedin.com/in/josep-servat-lorca-384ba757/"
     rel="noopener noreferrer"
     target="_blank"
   >
-    Linkedin
+    linkedin
+  </a>
+   
+  •
+   
+  <a
+    href="https://discord.gg/vbE4MaJ"
+  >
+    Discord
   </a>
 </footer>
 `;
