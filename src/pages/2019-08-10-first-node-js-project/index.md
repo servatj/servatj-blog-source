@@ -7,7 +7,7 @@ tags: ["node", "javascript", "beginner"]
 excerpt: "Creating a new node js project, a node Bot"
 ---
 
-![node header](./middlewares-en-nodejs.jpg)
+![node header](./nodejs-headers2.png)
 
 ## Introduction
 

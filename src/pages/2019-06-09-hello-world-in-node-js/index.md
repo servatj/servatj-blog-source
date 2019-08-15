@@ -7,7 +7,7 @@ tags: ["node", "javascript", "beginner"]
 excerpt: "A quick introduction to node js"
 ---
 
-![Lint rule gif](./middlewares-en-nodejs.jpg)
+![Lint rule gif](./nodejs-headers.png)
 
 **Introduction**
 
