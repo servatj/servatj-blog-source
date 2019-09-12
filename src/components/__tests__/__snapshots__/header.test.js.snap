@@ -20,7 +20,7 @@ exports[`Header renders correctly 1`] = `
   >
     <img
       alt="Josep Servat"
-      src="../assets/josepServat.jpg"
+      src="test-file-stub"
       style={
         Object {
           "borderRadius": "50%",
