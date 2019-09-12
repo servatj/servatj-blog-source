@@ -22,7 +22,4 @@ jobs:
             - ./node_modules
       - run:
           name: Gatsby Test
-          command: npm run build
-      - run:
-          name: Gatsby Build
-          command: npm run build
+          command: npm run Test
